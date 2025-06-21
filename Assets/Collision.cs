@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log("Ouch!");
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("What was that?");
     }
 
 }
